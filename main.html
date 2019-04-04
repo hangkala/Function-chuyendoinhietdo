@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Tempurature Converter</h1>
+    <p>Type a value u want to change from F to C</p>
+</head>
+<body>
+<input type="number" id="doF" onchange="myChange()">
+<br/>
+<p id="demo"></p>
+<script>
+
+    function myChange() {
+        let doF = document.getElementById("doF").value;
+        let result = (doF - 32)/1.8;
+        document.getElementById("demo").innerHTML = result;
+    }
+</script>
+</body>
+</html>
